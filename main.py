@@ -1,9 +1,12 @@
 import os
+from art import logo
+print(logo)
+
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
 
-item = input("What are you selling?\n")
-
+item = input("What are you selling?\n").lower()
+cls()
 auction = {
 }
 def calculate_winner():
